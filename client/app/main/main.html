@@ -9,6 +9,40 @@
 </header>
 
 <div class="container">
+
+    <md-button> Flat Button </md-button>
+    <md-button href="http://google.com"> Flat link </md-button>
+    <md-button class="md-raised"> Raised Button </md-button>
+    <md-button ng-disabled="true"> Disabled Button </md-button>
+    <md-button>
+      <md-icon md-svg-src="your/icon.svg"></md-icon>
+      Register Now
+    </md-button>
+</div>
+
+<div class="container">
+  <md-input-container>
+    <label>Color</label>
+    <input type="text" ng-model="color" required md-maxlength="10">
+  </md-input-container>
+
+  <md-slider ng-model="color" min="5" max="500">
+  </md-slider>
+
+  <md-button class="md-fab md-accent" aria-label="Play">
+    <md-tooltip>
+      Play Music
+    </md-tooltip>
+    <!-- <md-icon icon="img/icons/ic_play_arrow_24px.svg"></md-icon> -->
+  </md-button>
+
+
+
+</div>
+
+
+
+<div class="container">
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header">Features:</h1>
